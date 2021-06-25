@@ -1,7 +1,7 @@
 import datetime
 year = int(input('Digite o ano o qual quer ser verificado:'))
 if year == 0:
-    year = 2021
+    year = datetime.date.today().year
 criterion_1 = year % 4
 criterion_2 = year % 100
 criterion_3 = year % 400
