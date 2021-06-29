@@ -1,6 +1,6 @@
-a = input('Dia de nascimento: ')
-b = input('Mês de nascimento: ')
-c = input('Ano de nascimento: ')
+a = input('Birthday: ')
+b = input('birth month: ')
+c = input('year of birth: ')
 # comando input serve pra atribuir um valor a uma variavel.
-print('Entao no Dia {},no Mês de {} no Ano {} foi em que você nasceu.'
-      'correto?'.format(a, b, c))
+print('''So on the {}, on the {} month of the year,
+ you were born correct?'''.format(a, b, c))

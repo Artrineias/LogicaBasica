@@ -1,3 +1,3 @@
-x = input('qual é o seu nome: ')
-print('Ola {} ! Prazer em te conhecer!'.format(x))
+x = input('Type your name: ')
+print('Hello {}, nice to meet you!!'.format(x))
 # print é para mostra uma string na tela

@@ -8,4 +8,4 @@ if t_1 < t_2 + t_3 and t_3 < t_2 + t_1 and t_2 < t_1 + t_3:
 else:
     print('Esse triangulo não existe!!!')
 
-if t_1 < t
+
