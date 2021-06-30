@@ -1,6 +1,6 @@
-nome = input('Digite a nome do aluno:')
+name = input('Enter the name of student:')
 
-a1 = int(input('primeira nota:'))
-a2 = int(input('segunda nota:'))
+note1 = int(input('first note:'))
+note2 = int(input('second note:'))
 
-print('O aluno {} teve nota media de {:.1f}'.format(nome, (a1+a2)/2))
+print('The student {}  had average grade of {:.1f}'.format(name, (note1+note2)/2))

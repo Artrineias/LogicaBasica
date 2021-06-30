@@ -1,5 +1,5 @@
-num = float(input('Digite um numero:'))
+number = float(input('Type a number:'))
 
-print('O dobro do numero é {} '.format(num*2))
-print('O triplodo numero digitado é {}'.format(num*3))
-print('A raiz do numero digitado é {:.3f}'.format(num**(1/2)))
+print('The double the number is {} '.format(number*2))
+print('The triple of number is {}'.format(number*3))
+print('The root of number typed is {:.3f}'.format(number**(1/2)))

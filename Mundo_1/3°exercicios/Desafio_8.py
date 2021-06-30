@@ -1,7 +1,6 @@
-x = float(input('Digite a altura em metros:'))
-y = float(input('Digite a largura em metros:'))
+height = float(input('Enter the height in meters:'))
+width = float(input('Enter the width in meters:'))
 
-z = x * y
-tinta = z / 2
-print('A quantidade de tintas que vai ser ultilizada'
-      'deve ser de {} litros. '.format(tinta))
+square_meters = height * width
+had = square_meters / 2
+print('The amount of paints that will be used he must be {} liters . '.format(had))

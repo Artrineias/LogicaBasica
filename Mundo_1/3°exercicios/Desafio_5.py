@@ -1,4 +1,4 @@
-x = int(input('Digite uma valor em metros:'))
+meter = int(input('Type a value in meters:'))
 
-print('O valor convertido em cm é {}'.format(x*100))
-print('O valor convertido em milimitros é {}'.format(x*1000))
+print('The value converted to cm is {}'.format(meter*100))
+print('The value converted in millimeters is {}'.format(meter*1000))
