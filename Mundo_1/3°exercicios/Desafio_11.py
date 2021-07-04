@@ -1,8 +1,8 @@
-cels = float(input('Digite o valor da temperatura em C° '))
+cels = float(input('Enter the temperature value in C° '))
 
 far = cels * 9 / 5 + 32
 kel = cels + 273.15
 
-print('Os valores convertidos pra as outras temperatura é :')
+print('The values converted to the other temperatures is :')
 print('F° {}'.format(far))
 print('K° {}'.format(kel))

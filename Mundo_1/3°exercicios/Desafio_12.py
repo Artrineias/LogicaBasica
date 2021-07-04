@@ -1,5 +1,5 @@
 
-dia = int(input('\nDigite a quantos de dias o carro foi alugado: '))
-km = float(input('digite a distancia percorida nesse tempo em Km:'))
+day = int(input('Enter to how many of day the car was rented: '))
+km = float(input('Enter the distance covered in this time in Km:'))
 
-print('o valor a ser pago é {}'.format(dia*60 + km*0.15))
+print('The value to be paid is {}'.format(day*60 + km*0.15))

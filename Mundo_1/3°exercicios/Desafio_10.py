@@ -1,3 +1,3 @@
-salario = float(input('Digite de o valor do salario do funcionario: '))
-novo_salario = salario * 0.15 + salario
-print('O novo valor do salario do funcionario é {}'.format(novo_salario))
+salary = float(input('enter from the salary amount of the employee: '))
+new_salary = salary * 0.15 + salary
+print('The new employee salary value {}'.format(new_salary))

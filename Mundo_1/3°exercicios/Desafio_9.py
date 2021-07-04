@@ -1,3 +1,3 @@
-valor = float(input('insira o valor do produto:'))
+Value = float(input('enter the product value:'))
 
-print('O valor do produto com o desconto é {}'.format(valor-valor*0.05))
+print('The value of the product with the discount is {}'.format(Value-Value*0.05))
