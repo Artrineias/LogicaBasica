@@ -7,3 +7,4 @@ elif age > 18:
     print('You are past military service age!!!')
 else:
     print('You are still {} years old until military service.'.format((age-18)*(-1)))
+    print('teste')
