@@ -15,5 +15,13 @@ elif option == 3:
     value = product
     print(value)
 elif option == 4:
-    value = product+(product*0.2)
-    print(value)
+    x = int(input('how many times:'))
+    if x >= 3:
+        value =product + product*0.2
+        value_2 = value/ x
+        print('The installment to be paid is {} and value total amount is {}'.format(
+        value_2, value))
+    else:
+        print('You entered an invalid option!!!')
+else:
+    print('You entered an invalid option!!!')
