@@ -22,11 +22,11 @@ if a == 1:
 else:
     print(f'Does not have the value 3 in any position')
 
-resto = 0
 
+a = 0
 for count in range(0,4):
     division = tupla[count]%2
     if division == 0:
-        resto += 1
-
-print(f'The amount of numbers divisible by 2 is {resto}')
+       lista[a] = tupla[count]
+       a += 1  
+print(f'The amount of numbers divisible by 2 is {lista[0:a]}')
