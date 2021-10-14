@@ -1,4 +1,4 @@
-lista = input("escreva algo:")
+lista = input("Enter the expression:")
 a = 0 
 for c in range(0,len(lista)):
     if lista[c] == "(":
@@ -7,6 +7,6 @@ for c in range(0,len(lista)):
         a -=1
 
 if a == 0:
-    print("sua expressão é valida!!!")
+    print("Your expression is valid!!!")
 else:
-    print("Sua expressão é invalida!!!")
+    print("Your expression is invalid!!!")

@@ -1,16 +1,12 @@
 lista = list()
-decision = a = 0
 while True:    
-    while True:
-        value =int(input("Enter a value: "))
+    value =int(input("Enter a value: "))
         
-        if value in lista:
-            print("Duplicate value will not be added to the list.")
-            break
-        elif value not in lista:
-            lista.append(value)
-            print("Successfully added value...")
-            break
+    if value not in lista:
+        lista.append(value)
+        print("Successfully added value...")
+    else:
+        print("Duplicate value will not be added to the list.")
     
     decision = input("Want to Continue(Y/N): ").upper()
     if decision == "N":
