@@ -6,4 +6,4 @@ while (fator!=1 or fator<1):
     fator = fator - 1
     fatorial = fatorial * fator 
     print('X {} '.format(fator), end="")
-print(fatorial)
+print(f"= {fatorial}")

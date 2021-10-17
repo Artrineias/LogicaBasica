@@ -7,7 +7,7 @@ for x in range (1,6,1):
     print("-"*6+"{}°PESSOA".format(x)+6*"-")
     nome = input("Nome: ")
     idade = int(input("Idade: "))
-    sexo = input('Sexo[M/F]: ')
+    sexo = input('Sexo[M/F]: ').upper()
     os.system('clear')or None
     if 20>=idade and sexo== 'F':
         mulher_n=mulher_n + 1
