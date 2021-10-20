@@ -4,7 +4,14 @@ jogo = []
 g = int(input("How many games?: ")) 
 for c in range(0,g):
     for a in range(0,6):
-        jogo.append(randint(1,60))
+        n = randint(1,60)
+        while True:
+            if n not in jogo:
+                jogo.append(n)
+                break
+            else:
+                n = randint(1,60)
+    jogo.sort()
     todas.append(jogo[:])
     jogo.clear()
 print("-="*20)
