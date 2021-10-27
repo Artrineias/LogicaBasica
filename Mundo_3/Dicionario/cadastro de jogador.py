@@ -18,4 +18,3 @@ print(f"the player {jogador['name']} played {matches} matches")
 for i in range(0,len(goals)):
     print(f'    =>In match {i} the player scored {goals[i]} goals')
 print(f'it was a total of {jogador["total"]} goals')
-teste
