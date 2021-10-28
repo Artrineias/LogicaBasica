@@ -1,10 +1,10 @@
 trabalhadores = {}
 trabalhadores["name"] = input("Name: ")
 trabalhadores["age"]= 2020 - (int(input("Year of birth: ")))
-trabalhadores["ctps"]=int(input("CTPS(0 doesn't have): "))
+trabalhadores["ctps"]= int(input("CTPS(0 doesn't have): "))
 if trabalhadores["ctps"]!= 0:
     trabalhadores["hiring"] = int(input("Year of hiring: "))
-    trabalhadores["salary"]=float(input("Salary: "))
+    trabalhadores["salary"] = float(input("Salary: "))
     trabalhadores["retirement"] = trabalhadores["age"]+(35-(2020-trabalhadores["hiring"]))
 for k,v in trabalhadores.items():
     if k == "name":
