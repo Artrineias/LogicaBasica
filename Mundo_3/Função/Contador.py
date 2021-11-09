@@ -1,19 +1,19 @@
 def cont(i,f,p):
     print("=-"*25)
     if i < f:    
-        print(f"Contagem de {i} ate {f} de {p} em {p}")
+        print(f"Counting from {i} to {f} from {p} at {p}")
         for x in range(i,f+1,p):
             print(f"{x}..",end="")
-        print("Fim")
+        print("End")
         print("=-"*25)
     if i > f:
-        print(f"Contagem de {i} ate {f} de {p} em {p}")
+        print(f"Counting from {i} to {f} from {p} at {p}")
         for x in range(i,f-1,-p):
-            print(f"{x}..",end="")
-        print("Fim")
+            print(f"{x}...",end="")
+        print("End")
         print("=-"*25)
 
 
 cont(0,10,1)
 cont(10,0,2)
-cont((int(input("init:"))),(int(input("fim:"))),(int(input("passou:"))))
+cont((int(input("Start:"))),(int(input("End:"))),(int(input("Passed on:"))))

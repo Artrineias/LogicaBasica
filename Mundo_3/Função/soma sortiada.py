@@ -1,25 +1,25 @@
 from random import randint
-lista = []
-def soma(lista):
+list = []
+def sum(list):
     s = 0  
     for x in range(0,5):
-        if lista[x]%2 == 0:
-            s += lista[x]
-    print(f"Somando os valores pares de {lista} temos {s}")
+        if list[x]%2 == 0:
+            s += list[x]
+    print(f"Adding the even values ​​of {list} we have {s}")
     print("")
 
 
-def sorteio(lista):
-    print(f"Sorteando 5 valores da lista : ",end="")
+def sortition(list):
+    print(f"Drawing 5 values ​​from the list: ",end="")
 
     for x in range(0,5):
         a = randint(0,10)
         print(f"{a}",end=" ")
-        lista.append(a)
-    print("Pronto!")
-    soma(lista)
+        list.append(a)
+    print("Ready!")
+    sum(list)
 
 
 
 
-sorteio(lista)
+sortition(list)

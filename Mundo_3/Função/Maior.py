@@ -1,4 +1,4 @@
-def verificador(num):  
+def verifier(num):  
     mai = num[0]  
     for x in num:
         if mai < x:
@@ -10,11 +10,11 @@ def maior(*num):
     if num != ():
         for x in num:
             print(x,end=" ")
-        print(f"Foram informado {len(num)} valores ao todo.")
-        print(f"O maior valor informado foi {verificador(num)}")
+        print(f"{len(num)} values ​​were given in total.")
+        print(f"The highest value entered was {verifier(num)}")
     else:
-        print(f"Foram informado 0 valores ao todo.")
-        print(f"O maior valor informado foi 0")
+        print(f"0 values ​​were informed in total.")
+        print(f"The highest value informed was 0")
 
 
 def espaço():
