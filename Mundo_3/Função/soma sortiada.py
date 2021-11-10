@@ -2,9 +2,9 @@ from random import randint
 list = []
 def sum(list):
     s = 0  
-    for x in range(0,5):
-        if list[x]%2 == 0:
-            s += list[x]
+    for x in list:
+        if x%2 == 0:
+            s += x
     print(f"Adding the even values ​​of {list} we have {s}")
     print("")
 

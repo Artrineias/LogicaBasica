@@ -1,20 +1,19 @@
-def verifier(num):  
-    mai = num[0]  
-    for x in num:
-        if mai < x:
-            mai = x
-    return mai
-
+from time import sleep
 
 def maior(*num):
-    if num != ():
-        for x in num:
-            print(x,end=" ")
-        print(f"{len(num)} values ​​were given in total.")
-        print(f"The highest value entered was {verifier(num)}")
-    else:
-        print(f"0 values ​​were informed in total.")
-        print(f"The highest value informed was 0")
+    count = maior = 0
+    for x in num:
+        print(x,end=" ",flush=True)
+        sleep(0.1)
+        if count == 0:
+            maior = x
+        else:
+            if x> maior:
+                maior = x
+        count += 1
+        
+    print(f"{len(num)} values ​​were given in total.")
+    print(f"The highest value entered was {maior}")
 
 
 def espaço():
@@ -29,5 +28,6 @@ maior(1,2)
 espaço()
 maior(6)
 espaço()
-maior()
+maior(18,68,15,43,73,26,39,11,15,43,91,68,6,20,30,5,62,25,22,72,14,80,32,95,37,4,13,80,83,13,44)
 espaço()
+maior()
