@@ -1,22 +1,27 @@
+from time import sleep
+
+
 def fatorial(num,show=False):
     """
-    -> Calcula o fatorial de um numero.
-    :param num:O numero a ser calculado.
-    :Param show: (Opcional) Mostrar ou não a conta.
-    :return: O valor do fatorial de um numero
+    ->Calculates the factorial of a number.
+    :To num:The number to be calculated.
+    :To show: (Optional) Show or not the account.
+    :return: The factorial value of a number
     
     """
-    count = fatorial = 1
-    while count < num:
-        if show == True:
-            print(count,end=" X ")
-        count += 1
-        fatorial *= count
-    if show == True:
-        print(count,end=" = ")
-    
-    print(fatorial)
+    fatorial = 1
+    for c in range(num,0,-1):
+        if show:
+            print(c,end="")
+            if c > 1:
+                print(" X ",end="")
+            else:
+                print(" = ",end="")
+        fatorial *= c
+    return fatorial
 
 
-fatorial(5)
+
+print(fatorial(5,True))
+sleep(3)
 help(fatorial)
