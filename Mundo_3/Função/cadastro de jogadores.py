@@ -10,5 +10,5 @@ def reader(p,g):
 
 #main
 p = input("player: ")
-g = input("Goals: ")
+g = input("Goal(s): ")
 reader(p,g)
