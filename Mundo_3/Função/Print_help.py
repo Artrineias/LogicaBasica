@@ -24,4 +24,4 @@ def titulo (text,cor=0):
 
 #main
 
-titulo("ola mundo")
+titulo("Função do Python --> ")
