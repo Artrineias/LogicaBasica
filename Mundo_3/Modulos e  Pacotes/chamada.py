@@ -1,9 +1,5 @@
-import funcao
-import Moeda
+import Resumo
 
-num = float(input("Type a number:"))
+num = float(input("Type a price R$ "))
 
-print(f"Half of {Moeda.conversor(num)} is {Moeda.conversor(funcao.metade(num))}")
-print(f"Double {Moeda.conversor(num)} is {Moeda.conversor(funcao.dobro(num))}")
-print(f"The 10% increase, we have {funcao.aumento(num,10)}")
-print(f"The 10% decrease, we have {funcao.diminuir(num,13)}")
+Resumo.mostra(num,80,35,True)
