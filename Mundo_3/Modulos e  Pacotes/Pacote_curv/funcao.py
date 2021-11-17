@@ -1,4 +1,4 @@
-import Moeda
+from Pacote_curv import Moeda
 def metade (n,moeda=False):
     if moeda:
         return Moeda.conversor(n/2)

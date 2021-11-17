@@ -1,4 +1,5 @@
-import funcao
+from Pacote_curv import funcao
+from Pacote_curv import Verificador
 def mostra (n,a,d,c):
     tam = 26+len(str(n))
     print("-"*tam)
