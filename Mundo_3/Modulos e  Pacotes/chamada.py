@@ -1,5 +1,5 @@
-from Pacote_curv import Resumo
-from Pacote_curv import Verificador
+from Pacote_curv import Formata
 
-num = Verificador.analise("Type a price R$ ")
-Resumo.mostra(num,80,35,True)
+num = Formata.analise("Type a number:")
+
+Formata.mostra(num,13,20,True)
