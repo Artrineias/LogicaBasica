@@ -1,11 +1,13 @@
-def name (name):
+def name (name=""):
     while True:
-        name = input('Name: ')
+        name = input('Name: ').strip()
+        if name == "":
+            name = 1
         if verificaçãoname(name):
             break
     return name
 
-def age (age):
+def age (age=""):
     while True:
         age = input('Age: ')
         if verificaçãoage(age):
@@ -21,6 +23,7 @@ def verificaçãoname(name):
     else:
         print('Erro!!!')
         return False
+    
 
 
 def verificaçãoage(age):
