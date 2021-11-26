@@ -34,3 +34,11 @@ def verificaçãoage(age):
         return False
     else:
         return True
+
+
+def formatador(mgs):
+    print(f"{mgs}".center(30))
+
+
+def traço(tamanho):
+    print('-'*tamanho)

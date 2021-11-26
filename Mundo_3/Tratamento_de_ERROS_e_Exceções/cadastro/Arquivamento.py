@@ -1,29 +1,32 @@
-import prints
 
-def arquivos (mgs='none'):
-    if mgs in "name" or mgs in "age":
-        arquivo = open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{mgs}.txt","a", newline="")
-        if mgs == "name":    
+import prints, os.path
+
+def arquivos (name='name',age='age'):
+    if name in "name" and age in "age":
+        if name == "name":
+            arquivo = open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{name}.txt","a", newline="")    
             texto = prints.name()
-        elif mgs == "age":
-            texto = prints.age()
+            arquivo.write(texto+'\n')
+            arquivo.close()
         
-        arquivo.write(texto+'\n')
-        arquivo.close()
+        if age == "age":
+            arquivo = open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{age}.txt","a", newline="")
+            texto = prints.age()
+            arquivo.write(texto+'\n')
+            arquivo.close()        
+        
 
     else:
         return print("Nome de arquivo não definido")
 
-def mostra(mgs="none"):
-    if mgs in "name" or mgs in "age":
-        arquivo = open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{mgs}.txt","a", newline="")
-        if mgs == "name":    
-            texto = prints.name()
-        elif mgs == "age":
-            texto = prints.age()
-        
-        arquivo.write(texto+'\n')
-        arquivo.close()
+def mostra(name="name",age="age"):
 
+    if os.path.exists(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{name}.txt") and os.path.exists(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{age}.txt"):    
+        text_name = list(open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{name}.txt","r"))
+        text_age  = list(open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{age}.txt","r"))
+        tamanho = len(text_name)
+        for x in range(0,tamanho):
+            print(f"{text_name[x]}    {text_age[x]} anos")
     else:
-        return print("Nome de arquivo não definido")
+        arquivos('name')
+        arquivos('age')
