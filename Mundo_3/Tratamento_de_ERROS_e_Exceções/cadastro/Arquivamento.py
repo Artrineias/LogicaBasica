@@ -26,7 +26,9 @@ def mostra(name="name",age="age"):
         text_age  = list(open(f"Mundo_3/Tratamento_de_ERROS_e_Exceções/cadastro/{age}.txt","r"))
         tamanho = len(text_name)
         for x in range(0,tamanho):
-            print(f"{text_name[x]}    {text_age[x]} anos")
+            n= text_name[x].strip('\n')
+            i = text_age[x].strip('\n')
+            print(f"{n:<15} {i:<2} anos")
     else:
         arquivos('name')
         arquivos('age')

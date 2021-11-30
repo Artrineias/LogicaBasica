@@ -1,3 +1,4 @@
+import Arquivamento
 def name(name=""):
     while True:
         name = input('Name: ').strip()
@@ -30,7 +31,6 @@ def verificaçãoage(age):
     try:
         int(age)
     except ValueError:
-        print('Erro!!!')
         return False
     else:
         return True
@@ -42,3 +42,4 @@ def formatador(mgs):
 
 def traço(tamanho):
     print('-'*tamanho)
+

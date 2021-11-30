@@ -1,37 +1,30 @@
 def leiaint(mgs):
     while True:    
-        num = input(mgs).replace('-', '').replace('+', '').strip()
-        c = 0
 
         try:
-            int(num)
-        except ValueError:
-            c = 1
+            num = int(input(mgs).replace('-', '').replace('+', '').strip())
+        except (ValueError, TypeError):
             print("Erro!!!")
+            continue
         except KeyboardInterrupt:
-            num = 0
+            return 0
+        else:
+            return num
 
-        if c == 0:
-            break
-    return num
 
 def leiafloat(mgs):
     while True:
-        num = input(mgs).replace(',','.').replace('-', '').replace('+', '').strip()
-        c = 0
-        
         try:
-            float(num)
-        except ValueError:
-            c = 1
+            num = float(input(mgs).replace('-', '').replace('+', '').strip())
+        except (ValueError, TypeError):
             print("Erro!!!")
+            continue
         except KeyboardInterrupt:
-            num = 0
-        
-        if c == 0:
-            break
-    return num
+            return 0
+        else:
+            return num
 
 
-i = leiaint("Type a number: ")
-r = leiafloat("Type a number: ")
+i = leiaint("Type a number I: ")
+r = leiafloat("Type a number R: ")
+print(f"O numero inteiro digitado é {i} e o numero real digitado é {r}")
