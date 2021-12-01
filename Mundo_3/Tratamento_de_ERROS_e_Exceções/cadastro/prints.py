@@ -1,30 +1,31 @@
-import Arquivamento
+
 def name(name=""):
     while True:
         name = input('Name: ').strip()
-        if name == "":
-            name = 1
-        if verificaçãoname(name):
-            break
-    return name
+        try:
+            int(name)
+        except ValueError:
+            return name
+        except KeyboardInterrupt:
+            return '<desconhecido>'
+        else:
+            print('Erro!!!')
+            continue
+    
 
 
 def age(age=""):
     while True:
-        age = input('Age: ')
-        if verificaçãoage(age):
-            break
-    return age
-
-
-def verificaçãoname(name):
-    try:
-        int(name)
-    except ValueError:
-        return True
-    else:
-        print('Erro!!!')
-        return False
+        age = input('Age:')
+        try:
+            int(age)
+        except ValueError:
+            print('Erro!!!')
+            continue
+        except KeyboardInterrupt:
+            return 0
+        else:
+            return age
 
 
 def verificaçãoage(age):
