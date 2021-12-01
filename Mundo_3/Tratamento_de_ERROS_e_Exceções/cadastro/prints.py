@@ -4,10 +4,11 @@ def name(name=""):
         name = input('Name: ').strip()
         try:
             int(name)
-        except ValueError:
-            return name
         except KeyboardInterrupt:
             return '<desconhecido>'
+        except ValueError:
+            return name
+
         else:
             print('Erro!!!')
             continue
