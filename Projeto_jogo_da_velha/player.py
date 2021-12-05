@@ -3,5 +3,7 @@ class player:
         self.player = nome 
         self.jogada = jogada
     
-    def jogadas(self,jogada):
-        self
+    def joga(self,jogada):
+        self.posiçoes = []
+        self.posiçoes.append(jogada)
+        return self.posiçoes

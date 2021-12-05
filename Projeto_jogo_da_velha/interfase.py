@@ -1,10 +1,19 @@
 from tkinter import *
+
 class Application:
     def __init__(self, master=None):
-      self.widget1 = Frame(master)
-      self.widget1.pack()
-      self.msg = Label(self.widget1, text="Primeiro widget")
-      self.msg.pack ()
-root = Tk()
+      root.title("jogo da velha")
+      x = self.primero = Button(text="1").grid(row=0,column=0)
+      self.segundo = Button(text="2").grid(row=0,column=1)
+      self.terceiro = Button(text="3").grid(row=0,column=2)
+      self.quarto = Button(text="4").grid(row=1,column=0)
+      self.quinto = Button(text="5").grid(row=1,column=1)
+      self.sexto = Button(text="6").grid(row=1,column=2)
+      self.setimo = Button(text="7").grid(row=2,column=0)
+      self.oitavo = Button(text="8").grid(row=2,column=1)
+      self.nono = Button(text="9").grid(row=2,column=2)      
+
+root= Tk()
+root.geometry("110x90")
 Application(root)
 root.mainloop()
