@@ -1,3 +1,4 @@
+
 word = input('type something:')
 print("It's alphabet:")
 print(word.isalpha())
