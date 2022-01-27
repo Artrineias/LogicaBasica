@@ -3,22 +3,32 @@ from usuario import usuario
 
 def Busca_arqui(name,obj):
     
-    for i in range(0,4,1):
-        with open(f"{name}.txt","r+") as arqui:
-            a = arqui.readlines()
-            b = a[0].split(';')
+    with open(f"POO/{name}.txt","r+") as arqui:
+        a = arqui.readlines()
+        x = len(a)
+        for i in range(0,x,1):    
+            b = a[i].split(';')
             if b[0] == obj: 
                 nome = usuario(b[0],b[1],b[2],b[3])
-                v = usuario.verificador(b[2])
-                if v:
-                    return print(f"Nome:{nome.name}\nIdade:{nome.idade}\nSaldo:{nome.saldo}")
+                if usuario.verificador(b[2]):
+                    return print(f"Nome:{nome.name}\nIdade:{nome.idade}"
+                    f"\nSaldo:{nome.saldo}")
 
+def obj_usuario():
+    name = str(input("Nome: "))
+    idade = int(input("Idade: "))
+    senha = str(input("Senha: "))
+    saldo = int(input("Saldo: "))
+    user = usuario(name,idade,senha,saldo)
+    return user
 
 
 def set_Usuario_arquivos(name,obj):
-    for i in range(0,3,1):
-        with open(f"{name}.txt","a+") as arqui:
-            arqui.writelines(str(obj.name))
-            arqui.writelines(str(obj.idade))
-            arqui.writelines(str(obj.senha))
-            arqui.writelines(str(obj.saldo))
+    with open(f"POO/{name}.txt","a+") as arqui:
+        arqui.writelines(str(obj.name))
+        arqui.writelines(";")
+        arqui.writelines(str(obj.idade))
+        arqui.writelines(";")
+        arqui.writelines(str(obj.senha))
+        arqui.writelines(";")
+        arqui.writelines(str(obj.saldo))

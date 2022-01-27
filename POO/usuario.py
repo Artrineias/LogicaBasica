@@ -3,7 +3,7 @@ from ast import Return
 
 class usuario:
     ## construtur
-    def __init__(self,name,senha,idade,saldo):
+    def __init__(self,name,idade,senha,saldo):
         ##Atributos ou caracteristicas da class
         self.name = name
         self.idade = idade
@@ -36,8 +36,9 @@ class usuario:
 
     @staticmethod
     def verificador(senha):
-        for i in range(0,3,1):
-            print(f"{i}°tentativa")
+        for i in range(0,4,1):
+            if i != 0:
+                print(f"{i}°tentativa")
             s = input("Digite a senha: ")
             if senha == s:
                 return True
