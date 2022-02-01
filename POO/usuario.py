@@ -35,11 +35,10 @@ class usuario:
         self._saldo = valor
 
     @staticmethod
-    def verificador(senha):
+    def verificador(senha,s):
         for i in range(0,4,1):
             if i != 0:
                 print(f"{i}°tentativa")
-            s = input("Digite a senha: ")
             if senha == s:
                 return True
         return False
