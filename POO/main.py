@@ -1,5 +1,4 @@
-import POO.manipulator as manipulator
-
+import leitor 
 while True:
     print("="*17+"OPÇÕES"+"="*17)
     print("1-Ver informações de um usuario.")
@@ -10,9 +9,9 @@ while True:
     if opç == 1:
         user = input("Usuario:")
         senha = input("Senha:")
-        manipulator.Busca_arqui("Dados",user,senha)
+        leitor.Busca_arqui("Dados",user,senha)
     if opç == 2:
-        obj = manipulator.obj_usuario()
-        manipulator.set_Usuario_arquivos("Dados",obj)
+        obj = leitor.obj_usuario()
+        leitor.set_Usuario_arquivos("Dados",obj)
     if opç == 9:
         break

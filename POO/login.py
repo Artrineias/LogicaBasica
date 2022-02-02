@@ -1,6 +1,6 @@
 
 from tkinter import *
-import manipulator
+import leitor
 
 def login():
     tela = Tk() 
@@ -49,9 +49,9 @@ def login():
     mostra.place(x=10,y=70 )
     
     def botão_click():
-        name = manipulator.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),1)
-        idade = manipulator.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),2)
-        saldo = manipulator.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),3)
+        name = leitor.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),1)
+        idade = leitor.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),2)
+        saldo = leitor.Busca_usuario("Dados",ent_usuario.get(),ent_senha.get(),3)
         mostra["text"] = (f"Nome:{name}\nIdade:{idade}\nSaldo:{saldo}")
 
     tela.mainloop()
