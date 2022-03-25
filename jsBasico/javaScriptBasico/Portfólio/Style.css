@@ -1,0 +1,105 @@
+body{
+    background-image: url(../Portfólio/img/background-body.jpg);
+    height: 1500px;
+
+}
+.Corpo-de-Informação{
+    max-width: 1920px;
+    min-width: 320px;
+    max-height: 1080px;
+    background-color: rgba(15, 15, 50, 0.7);
+    margin: auto;
+}
+.Foto-Perfil{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 30px;
+    top: 5px;
+    border-radius: 100%;
+      
+}
+.Cabeçalho{
+    background-color: rgba(15, 15, 50, 0.7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 155px;
+}
+.Caixa-Texto{
+    background-color: rgba(15, 15, 50, 0.7);
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.90);
+    position: absolute;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1820px;
+    min-width: 320px;
+    height: 1200px;
+    left: 0px;
+    top: 200px;
+
+
+}
+
+.Informações-Usuario{
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.90);
+    position: absolute;
+    width: 700px;
+    height: 150px;
+    top: 20px;
+    left: 170px;
+
+
+}
+
+.Linkedin{
+    position: absolute;
+    top: 50px;
+    left: 1270px;
+    width: 40px;
+    height: 40px;
+}
+.Git-hub{
+    position: absolute;
+    top: 50px;
+    left: 1220px;
+    width: 40px;
+    height: 40px;
+}
+
+
+#primeiro{
+    background-color: rgba(165, 42, 42, 0.452);
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+}
+
+#segundo{
+    background-color: rgba(238, 130, 238, 0.349);
+    position: absolute;
+    top: 600px;
+    left: 460px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+}
+
+#terceiro{
+    background-color:rgba(0, 0, 255, 0.418);
+    position: absolute;
+    top: 600px;
+    left: 900px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+}

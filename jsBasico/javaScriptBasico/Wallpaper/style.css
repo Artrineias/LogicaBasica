@@ -1,0 +1,51 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://s1.1zoom.me/b5050/596/Evening_Forests_Mountains_Firewatch_Campo_Santo_549147_1920x1080.jpg");
+    background-color: #011128;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    position: relative;
+    top: 150px;
+    height: 500px;
+    max-height: 200px;
+  }
+
+  .page-title {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 450px;
+  }
+  input{
+      position: absolute;
+      top: 45px;
+      left: 550px;
+      width: 400px;
+  }
+  button{
+    position: absolute;
+    top: 45px;
+    left: 960px;
+    width: 80px;
+    height: auto;
+  }
+  .imgAnime{
+    transform: translate(0, 0%);
+    border-radius: 25px;
+    border: solid 1px transparent;
+    padding: 15px;
+  }
