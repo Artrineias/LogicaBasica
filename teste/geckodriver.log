@@ -1,0 +1,33 @@
+1653102677004	geckodriver	INFO	Listening on 127.0.0.1:33739
+1653102677604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42959" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDJralf"
+
+(firefox:29922): Gtk-WARNING **: 00:11:17.811: Theme parsing error: gtk-contained-dark.css:2871:228: Missing closing bracket for :not()
+
+(firefox:29922): Gtk-WARNING **: 00:11:19.281: Theme parsing error: gtk-contained-dark.css:2871:228: Missing closing bracket for :not()
+
+(firefox:29922): Gtk-WARNING **: 00:11:19.531: Theme parsing error: gtk-contained-dark.css:2871:228: Missing closing bracket for :not()
+
+(firefox:29922): Gtk-WARNING **: 00:11:19.702: Theme parsing error: gtk-contained-dark.css:2871:228: Missing closing bracket for :not()
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653102680064	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDJralf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42959/devtools/browser/be91155e-7aef-4ae8-812b-45e334cef160
+1653102683152	Marionette	INFO	Listening on port 34077
+Read port: 34077
+1653102683290	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: undefined, line 0: Error: hostname is undefined
+Extension error: TypeError: g_CS[e] is null moz-extension://8060a5b0-486e-4aff-9148-1db77c79a428/background.js 1
+[[Exception stack
+receiveCS@moz-extension://8060a5b0-486e-4aff-9148-1db77c79a428/background.js:1:62052
+onconnect_listener</<@moz-extension://8060a5b0-486e-4aff-9148-1db77c79a428/background.js:1:54645
+e@moz-extension://8060a5b0-486e-4aff-9148-1db77c79a428/lpfulllib.js:1:5220
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:698:13
+addListener/asyncWithoutClone/<@resource://gre/modules/ExtensionCommon.jsm:2591:39
+]]
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit support@lastpass.com.137438953499
+1653102730775	Marionette	INFO	Stopped listening on port 34077
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
