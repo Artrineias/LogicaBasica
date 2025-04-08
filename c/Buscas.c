@@ -1,8 +1,5 @@
 #include <stdio.h>
-int lista[10] = {1,2,3,3,2,1,5,6,7,4};
-int posicoes[10];
-
-int ordenacao(){
+int ordenacao(int *lista){
     int aux = 0;
     for(int i = 0; i < 10; i++){
         for(int j = 0; j < 10; j++){
@@ -13,23 +10,23 @@ int ordenacao(){
             }
         }
     }
-    for(int i = 0;i<10;i++){
-        printf("%d",lista[i]);
-    }
-}
+};
 
-int buscabinaria(){
-
-}
+int buscabinaria(int &lista){
+    int posicao;
+    for(int i = 0;)
+};
 
 int sequencial(){
 
-}
+};
 
 
 int main(){
+    int lista[10] = {1,2,3,3,2,1,5,6,7,4};
+    int posicoes[10];
 
-    ordenacao();
+    ordenacao(lista);
 
 
     return 0;
