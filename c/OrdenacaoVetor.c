@@ -2,7 +2,7 @@
 
 
 int main(){
-    int vetor[5] = {5,2,3,6};
+    int vetor[5] = {5,2,3,6,5};
     int anterior ;
     
     for (int i = 0; i < 4; i++){
