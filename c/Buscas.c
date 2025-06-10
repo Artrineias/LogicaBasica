@@ -12,10 +12,10 @@ int ordenacao(int *lista){
     }
 };
 
-int buscabinaria(int &lista){
+int buscabinaria(int lista){
     int posicao;
-    for(int i = 0;)
-};
+
+}
 
 int sequencial(){
 
