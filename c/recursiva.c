@@ -9,9 +9,8 @@ double FatorialInvetido(int quantidade){
         return 1;
     }else{
         
-        Fatorial = FatorialInvetido(quantidade)*quantidade;
+        Fatorial = FatorialInvetido(quantidade-1)*quantidade;
         printf("%lf \n",Fatorial);
-        quantidade--;
     }
     
     return Fatorial;
